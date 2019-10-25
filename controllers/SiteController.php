@@ -152,7 +152,7 @@ class SiteController extends Controller
             $get = Yii::$app->request->get();
             $string = $get['string'];
         }else{
-            $string = '123';
+            $string = '';
         }
         return $this->render('test',['string' => $string]);
     }
